@@ -1,0 +1,228 @@
+<html lang="es">
+<head>
+    <title>Balerion Robotics</title>
+    <meta charset="UTF-8">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- <div class="logo"><img src="img/pin.png" alt="Balerion Robotics Logo" class="logo-img"></div>--> 
+            <h2>Balerion Robotics</h2>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html">Start</a></li>
+            </ul>
+        </nav>
+
+        <!-- Carrito de Compras -->
+        <div id="cart-modal" class="cart-modal">
+            <div class="cart-content">
+                <span class="close-cart">&times;</span>
+                <h2>Your Shopping Cart</h2>
+                <div id="cart-items" class="cart-items">
+                    <!-- Los productos del carrito aparecerán aquí -->
+                </div>
+                <div class="cart-total">
+                    <p>Total: S/. <span id="cart-total">0</span></p>
+                </div>
+                <div class="cart-buttons">
+                    <button id="pay-now" class="pay-now">PAY NOW</button>
+                    <button id="empty-cart" class="empty-cart">EMPTY CART</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Icono del Carrito -->
+        <div class="cart-icon" id="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>    
+        <!-- Products: URBAN -->
+        <section>
+            <article id="title">
+                <h1>Urban Nexus Division</h1>
+                <h2>Smart technology for city life.</h2>
+            </article>
+            <!-- Gallery -->        
+            <article id="products" class="products">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="img/dog.png" alt="Product 1">
+                    <h3>HoundTech Raptor-7</h3>
+                    <p class="price">S/. 299</p>
+                    <p>
+                        The Raptor-7 is an autonomous dog designed for patrolling, assistance, 
+                        and exploration in urban environments. Its 360° sensor suite allows it 
+                        to identify threats, follow routes, and accompany users on surveillance 
+                        or daily support tasks with near-natural precision.
+                    </p>
+                    <p class="offer">Now: S/. 199</p>
+                    <button>WANT IT!</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="img/humanoid.png" alt="Product 2">
+                    <h3>Rhaegar MK-ØØ7</h3>
+                    <p class="price">S/. 359</p>
+                    <p>
+                        The Rhaegar MK-007 is a humanoid robot designed for urban assistance, patrol, 
+                        and interactive tasks. Its versatile mobility, sensors, and adaptive interface 
+                        allow it to guide users, perform deliveries, monitor surroundings, and execute 
+                        complex routines with near-human precision in cities.
+                    </p>
+                    <p class="offer">Now: S/. 299</p>
+                    <button>WANT IT!</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="img/helmet.png" alt="Product 3">
+                    <h3>NeuroLink V-09</h3>
+                    <p class="price">S/. 279</p>
+                    <p>
+                        The NeuroLink V-09 creates a direct bridge between mind and digital environment, 
+                        enabling virtual navigation, remote training, and immersive experiences with 
+                        minimal latency. Designed for urban users seeking complete control through an 
+                        intuitive, brain-like interface.
+                    </p>
+                    <p class="offer">Now: S/. 209</p>
+                <button>WANT IT!</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Products: NAVIGATION -->
+        <section>
+            <article class="title">
+                <h1>NavCore Division</h1>
+                <h2>Total exploration: land, sea and orbit.</h2>
+            </article>
+            <!-- Products -->        
+            <article id="products" class="products">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="img/satellite.png" alt="Product 1">
+                    <h3>AstraScope NX-91</h3>
+                    <p class="price">S/. 299</p>
+                    <p>
+                        The AstraScope NX-91 operates in low Earth orbit, continuously collecting 
+                        high-resolution images, environmental data, and pollution patterns in real 
+                        time. It is designed for businesses, research institutions, and smart city 
+                        projects requiring reliable and accurate planetary monitoring.
+                    </p>
+                    <p class="offer">Now: S/. 199</p>
+                    <button>WANT IT!</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="img/dron.png" alt="Product 2">
+                    <h3>NovaWing T-17</h3>
+                    <p class="price">S/. 359</p>
+                    <p>
+                        The NovaWing T-17 is an advanced aerodynamic drone equipped with high-resolution 
+                        cameras and autonomous flight algorithms. It is ideal for inspections, monitoring 
+                        large areas, and capturing highly precise aerial images, even in very demanding 
+                        urban city environments safely.
+                    </p>
+                    <p class="offer">Now: S/. 299</p>
+                    <button>WANT IT!</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="img/submarine_dron.png" alt="Product 3">
+                    <h3>Nautilus Vortex UX-3</h3>
+                    <p class="price">S/. 279</p>
+                    <p>
+                        The Nautilus Vortex UX-3 is a submersible drone for underwater exploration. 
+                        Its pressure-resistant chassis, sonar matrix, and autonomous movement enable 
+                        precise mapping, inspection of submerged structures, and ecological data 
+                        collection with stable performance in deep waters.
+                    </p>
+                    <p class="offer">Now: S/. 209</p>
+                <button>WANT IT!</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Products: BIOFORGE -->
+        <section>
+            <article class="title">
+                <h1>BioForge Mobility Labs</h1>
+                <h2>Redesigning human movement.</h2>
+            </article>
+            <!-- Products -->        
+            <article id="products" class="products">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="img/arm.png" alt="Product 1">
+                    <h3>BioArm X-47</h3>
+                    <p class="price">S/. 299</p>
+                    <p>
+                        The BioArm X-47 integrates micro-precision actuators and myoelectric sensors 
+                        that translate muscle impulses into fluid, powerful movements. It offers 
+                        intuitive control, optimized force, and a natural response that adapts to the 
+                        user's lifestyle.
+                    </p>
+                    <p class="offer">Now: S/. 199</p>
+                    <button>WANT IT!</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="img/exoskeleton.png" alt="Product 2">
+                    <h3>AtlasCore MK-2X</h3>
+                    <p class="price">S/. 359</p>
+                    <p>
+                        The AtlasCore MK-2X multiplies strength, reduces fatigue, and significantly 
+                        increases user endurance through assisted actuators and adaptive sensors. It is 
+                        ideal for industrial work, rescue operations, assisted mobility, or high-intensity 
+                        training tasks.
+                    </p>
+                    <p class="offer">Now: S/. 299</p>
+                    <button>WANT IT!</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="img/leg.png" alt="Product 3">
+                    <h3>BioLeg X-22 Vector</h3>
+                    <p class="price">S/. 279</p>
+                    <p>
+                        The NeoLimb PX-47 combines ultralight materials with an intelligent cushioning 
+                        system that replicates natural biomechanics. Designed for walking, running, or 
+                        tackling varied terrain with impeccable stability and an organic feel.
+                    </p>
+                    <p class="offer">Now: S/. 209</p>
+                <button>WANT IT!</button>
+                </div>
+            </article>
+        </section>   
+    </main>
+
+    <footer>
+        <section class="audio-band">
+          <p>Life the experience</p>
+          <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </section>
+        <p>
+          Ø BALERION ROBOTICS | THE FUTURE IN YOUR HANDS
+        </p>
+    </footer>
+
+    <!-- Link to JS -->
+    <script src="js/shopcart.js"></script>    
+
+</body>
+</html>

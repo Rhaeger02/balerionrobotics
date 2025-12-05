@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {   
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+h1, h2, h3, a {
+    font-family: 'Orbitron', sans-serif;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px 30px;
+    z-index: 10;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Logo Image */
+/*.logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 150px;
+    border-radius: 10px;
+    object-fit: contain;
+}*/
+
+/* NAVIGATION LINKS */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #808080;
+}
+
+/* HAMBURGER BUTTON */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    background-image: url("../img/background1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+/* INDIVIDUAL PRODUCTS */
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0 5px;
+}
+
+.price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.offer {
+    color: #30D5C8;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* SECTION: PROJECTS */
+
+section.project {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 70px);
+    z-index: 2;
+}
+
+section.project article {
+    display: flex;
+    width: 100%;
+}
+
+section.project figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 56.25vw;
+    margin: 0;
+    border-radius: 50px;
+}
+
+section.project figure img {
+    width: 70%;
+    border-radius: 50px;
+}
+
+section.project .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    color: #f0fbfa;
+    background: #1f1a1c;
+    padding: 100px;
+    border-radius: 50px;
+}
+
+section.project .text p {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #00ffff;
+    text-align: justify;
+}
+
+section.sticky {
+    position: sticky;
+    margin-top: 70px;
+    top: 70px;
+}
+
+/* SECTION: PROJECTS - OVERRIDES */
+section.project.project-1 figure {
+    background: #435565;
+}
+
+section.project.project-1 .text h2,
+section.project.project-1 .text a {
+    color: #f0fbfa;
+}
+
+section.project.project-2 figure {
+    background: #738a9a;
+}
+
+section.project.project-2 .text h2,
+section.project.project-2 .text a {
+    color: #f0fbfa;
+}
+
+section.project.project-3 figure {
+    background: #636d7d;
+}
+
+section.project.project-3 .text h2,
+section.project.project-3 .text a {
+    color: #f0fbfa;
+}
+
+/* SECTION: CONTACT */
+section.contact {
+    position: relative;
+    background: #000;
+    color: white;
+    padding: 200px 30px 50px;
+    margin-top: 70px;
+    scroll-margin-top: 0px;
+    z-index: 3;
+}
+
+/* SECTION: CONTACT-TOP */
+section.contact .contact-top  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .contact-top figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .contact-top figure img {
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 60%;
+}
+
+/* SECTION: CONTACT-BOTTOM */
+section.contact .contact-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contact .contact-bottom ul {
+    display: flex;
+    color: #00ffffff;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+section.contact .contact-bottom ul li a {
+    display: inline;
+    text-decoration: none;
+    list-style: none;
+    color: #00ffffff;
+}
+
+section.full-screen {
+    height: 100vh;
+    top: 0;
+    margin-top: 0;
+    z-index: 3;
+}
+
+/* BUTTONS */
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #808080;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #2E2E2E;
+  color: #00ffffff;
+}
+
+/* AUDIO BAND */
+section.audio-band {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: #ccc;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    padding: 15px;
+    color: #000;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    /* NAVBAR MOBILE */
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    /* Mostrar hamburger, ocultar menú normal */
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 100;
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* HERO MOBILE */
+    .hero {
+        background-position: 42% center;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+    
+    .hero button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    /* PRODUCTS MOBILE */
+    .products {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    .product {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    /* PROJECTS MOBILE */
+    section.project {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    section.project article {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    section.project figure {
+        flex-basis: auto;
+        padding: 40px 20px;
+        border-radius: 30px;
+    }
+    
+    section.project figure img {
+        width: 80%;
+        max-width: 250px;
+    }
+    
+    section.project .text {
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    
+    section.sticky {
+        position: relative;
+        margin-top: 20px;
+        top: 0;
+    }
+    
+    /* CONTACT MOBILE */
+    section.contact {
+        padding: 120px 20px 30px;
+    }
+    
+    section.contact .contact-bottom ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    section.full-screen {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    /* BANDA AUDIO MOBILE */
+    /*section.banda-audio {
+        width: 90%;
+        max-width: 300px;
+        margin: 0 auto;
+    }*/
+    
+    /* FOOTER MOBILE */
+    footer {
+        padding: 15px 10px;
+    }
+    
+    footer p {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    /* PROJECT */
+    section.project .text {
+        padding: 25px 15px;
+    }
+    
+    /* PRODUCTS */
+    .products {
+        padding: 15px 10px;
+    }
+    
+    /* CONTACT */
+    section.contact .contact-top figure img {
+        width: 80%;
+    }
+    
+    /* AUDIO BAND */
+    section.audio-band {
+        width: 95%;
+        padding: 12px;
+    }
+}
