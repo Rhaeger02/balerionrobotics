@@ -351,9 +351,9 @@ footer {
 }
 
 footer a {
-  text-decoration: none; /* Elimina el subrayado */
-  color: inherit; /* Hereda el color del elemento padre */
-  cursor: pointer; /* Mantiene el cursor de mano */
+  text-decoration: none;
+  color: inherit; 
+  cursor: pointer; 
   font-family: 'Chakra Petch', sans-serif;
   font-weight: bold;
 }
