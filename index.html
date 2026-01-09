@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -148,22 +150,36 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="contact full-screen">
-            <!-- Contact Top -->
-            <article class="contact-top">
-                <figure>
-                    <img src="img/logo.png" alt="Logo Balerion Robotics" />
-                </figure>
-            </article>
-            <!-- Contact Bottom -->
-            <article class="contact-bottom">
-                <h3>Let's work together !</h3>
-                <ul>
-                    <li><a href="https://github.com/" target="_blank">balerion.github.io</a></li>
-                    <li><a href="mailto:balerion.tech.pe@outlook.com">balerion.tech.pe@outlook.com</a></li>
-                    <li><a href="https://wa.me/51987654321" target="_blank">WhatsApp: 987654321</a></li>
-                </ul>
-            </article>
+        <section id="contact" class="contact-container">
+            <div class="contact-left">
+                <h2>Escríbenos</h2>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Nombre y Apellido" required>
+                    <input type="tel" placeholder="Teléfono" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        
+            <div class="contact-right">
+                <div class="info-links">
+                    <h3>Información</h3>
+                    <a href="#">Acerca de</a>
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+
+                <div class="redes-sociales">
+                    <h3>Síguenos</h3>
+                    <div class="iconos-redes">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -176,7 +192,8 @@
           </audio>
         </section>
         <p>
-          Ø BALERION ROBOTICS | THE FUTURE IN YOUR HANDS
+          Ø BALERION ROBOTICS | THE FUTURE IN YOUR HANDS | CREATED BY 
+          <a href="https://cma-portfolio.netlify.app/" target="_blank">CARLOS M.</a>
         </p>
     </footer>
 

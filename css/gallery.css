@@ -24,9 +24,10 @@ section {
 /* NAVBAR */
 .navbar {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 70px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,6 +193,14 @@ footer {
     justify-content: center;
     align-items: center; 
     gap: 15px;
+}
+
+footer a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del elemento padre */
+  cursor: pointer; /* Mantiene el cursor de mano */
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: bold;
 }
 
 /* CARRITO DE COMPRAS */
