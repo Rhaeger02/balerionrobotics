@@ -218,7 +218,11 @@ section {
     color: #f0fbfa;
 }
 
-/* Estilos Generales */
+/* CONTACT CONTAINER */
+#contact {
+    scroll-margin-top: 0px !important;
+}
+
 .contact-container {
     position: relative;
     background-color: #000;
@@ -242,7 +246,7 @@ section {
     flex: 1;
 }
 
-/* Estilos del Formulario */
+/* FORM */
 .contact-left form {
     display: flex;
     flex-direction: column;
@@ -255,15 +259,17 @@ section {
     border: 1px solid #333;
     color: #fff;
     border-radius: 4px;
+    font-family: inherit;
 }
 
 .contact-left button {
-    padding: 12px;
+    padding: 15px;
     background-color: #fff;
     color: #000;
     border: none;
     font-weight: bold;
     cursor: pointer;
+    text-transform: uppercase;
     transition: 0.3s;
 }
 
@@ -271,7 +277,24 @@ section {
     background-color: #ccc;
 }
 
-/* Estilos de la derecha (Links y Redes) */
+/* MESSAGE */
+#message {
+    display: none; /* Hidden by default */
+    color: #00ffff;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0.1);
+    border-left: 4px solid #00ffff;
+    font-weight: bold;
+    animation: aparecer 0.4s ease-out forwards;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* CONTACT - SOCIAL MEDIA */
 .info-links {
     display: flex;
     flex-direction: column;
@@ -280,6 +303,7 @@ section {
 }
 
 .info-links a {
+    cursor: pointer;
     color: #bbb;
     text-decoration: none;
     transition: 0.3s;
@@ -289,6 +313,7 @@ section {
     color: #fff;
 }
 
+
 .iconos-redes {
     display: flex;
     gap: 20px;
@@ -296,11 +321,14 @@ section {
 
 .iconos-redes i {
     color: white;
-    font-size: 24px; /* Tamaño ajustable */
+    font-size: 24px; 
     transition: 0.3s;
 }
+
 .iconos-redes i:hover {
-    color: #ccc; /* Efecto al pasar el mouse */
+    color: #00ffff; /* Cambia a Cyan al pasar el mouse */
+    transform: translateY(-5px);
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6); /* Añade un pequeño resplandor */
 }
 
 /* BUTTONS */
@@ -456,9 +484,9 @@ footer a {
     /* CONTACT MOBILE */
     .contact-container {
         flex-direction: column;
-        justify-content: center; /* Centra el bloque de formulario e info */
-        padding: 40px 20px;
-        height: auto; /* Permite que crezca si el contenido es mucho */
+        justify-content: center; 
+        padding: 70px 20px;
+        height: auto; 
         min-height: 100vh;
     }
     
@@ -502,7 +530,7 @@ footer a {
     
     /* CONTACT */
     .contact-container {
-        padding: 40px;
+        padding: 70px 10px;
     }
 
     h2, h3 {

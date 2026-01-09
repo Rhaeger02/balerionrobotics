@@ -153,30 +153,45 @@
         <section id="contact" class="contact-container">
             <div class="contact-left">
                 <h2>Escríbenos</h2>
-                <form action="#" method="POST">
+                <form id="form">
                     <input type="text" placeholder="Nombre y Apellido" required>
                     <input type="tel" placeholder="Teléfono" required>
                     <input type="email" placeholder="Correo electrónico" required>
                     <textarea placeholder="Tu mensaje" rows="5" required></textarea>
                     <button type="submit">Enviar Mensaje</button>
                 </form>
+
+                <div id="message">
+                    Gracias por tu mensaje. Nos comunicaremos en la brevedad posible.
+                </div>
             </div>
         
             <div class="contact-right">
                 <div class="info-links">
                     <h3>Información</h3>
-                    <a href="#">Acerca de</a>
-                    <a href="#">Términos y Condiciones</a>
-                    <a href="#">Política de Privacidad</a>
+                    <a href="javascript:void(0);">Acerca de</a>
+                    <a href="javascript:void(0);">Términos y Condiciones</a>
+                    <a href="javascript:void(0);">Política de Privacidad</a>
                 </div>
 
                 <div class="redes-sociales">
                     <h3>Síguenos</h3>
                     <div class="iconos-redes">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://wa.me/987654321" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -199,6 +214,7 @@
 
     <!-- Link to JS -->
     <script src="js/hamburger.js"></script>
+    <script src="js/message.js"></script>
 
 </body>
 </html>
